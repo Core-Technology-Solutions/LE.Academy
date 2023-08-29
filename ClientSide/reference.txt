@@ -1,0 +1,26 @@
+Lamiaa Selim
+npm istall => run project
+----------------
+steps
+1- download node 
+2- node -v 
+3- npm -v 
+3- install sass => npm install -g sass
+4- install angular => npm install -g @angular/cli
+5- Create project => ng new ClientSide
+	- execution policy=> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+6- install bootstrap => npm i bootstrap@5.0.1
+7- install bootstrap icons => npm i bootstrap-icons
+8- setup boostrap angular project
+	1- pen the angular.json file in your project's root directory. 
+	Find the "styles" section under the "architect" section and add the path 
+	to the Bootstrap CSS file:"styles": [ "src/styles.css",
+    				"node_modules/bootstrap/dist/css/bootstrap.min.css" ],
+	
+	2-You can do this by including the Bootstrap JavaScript and Popper.js in your 
+	angular.json file under the "scripts" section:"scripts": [
+   			 "node_modules/jquery/dist/jquery.min.js",
+    			"node_modules/popper.js/dist/umd/popper.min.js",
+    			"node_modules/bootstrap/dist/js/bootstrap.min.js"]
+9- Create new component => ng g c header (for example)
+10- Using Angular Material
