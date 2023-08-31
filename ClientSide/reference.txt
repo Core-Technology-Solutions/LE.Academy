@@ -24,3 +24,7 @@ steps
     			"node_modules/bootstrap/dist/js/bootstrap.min.js"]
 9- Create new component => ng g c header (for example)
 10- Using Angular Material
+12- install fontawesome => npm install --save @fortawesome/fontawesome-free
+	In your Angular project, you'll need to import the Font Awesome stylesheets in your styles.scss
+	@import '~@fortawesome/fontawesome-free/css/all.css';
+13- 
