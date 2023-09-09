@@ -1,10 +1,14 @@
+header{
+  height: 100vh;
+}
 nav{
   background-color: transparent !important;
   z-index: 999;
 }
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-right: 15px;
@@ -13,7 +17,7 @@ nav{
 
 .navbar-toggler {
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 .navbar-toggler:focus {
@@ -21,7 +25,7 @@ nav{
   box-shadow: none;
 }
 /* End Navbar */
-#carouselExampleCaptions{
+#carouselExampleInterval{
   margin-bottom: 30px;
 }
 .carousel-item img{
@@ -30,6 +34,9 @@ nav{
   width: 100%;
   display: relative;
   top: 0;
+}
+.carousel-item img{
+  height: 1005px;
 }
 .carousel-indicators{
   display: none;
@@ -42,7 +49,7 @@ nav{
 }
 .carousel-caption{
   position: absolute;
-  top: 15%;
+  top: 30%;
 }
 .carousel-caption h1{
   font-size: 3rem;
@@ -55,13 +62,19 @@ nav{
   font-family: 'Poppins', sans-serif;
 }
 .carousel-caption button{
-  background-color: rgba(29,92,158,0.8);
+  background: linear-gradient(191deg, #136CBC 8.32%, rgba(48, 104, 154, 0.53) 117.47%, rgba(19, 108, 188, 0.00) 241.17%);
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  font-style: normal;
   border: none;
-  width: 200px;
+  width: 294px;
+  height: 92px;
   padding: 14px 14px;
-  border-radius: 15px;
+  border-radius: 20px;
+}
+.btnHeader:hover,
+.btnHeader:focus {
+  box-shadow: rgb(254, 254, 254) 0px 10px 50px -20px, rgb(246, 243, 243) 0px 10px 20px -30px;
 }

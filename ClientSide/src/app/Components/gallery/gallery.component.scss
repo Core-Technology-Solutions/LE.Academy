@@ -1,0 +1,61 @@
+[type="radio"]{
+  display: none;
+}
+label{
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  width: 530px;
+  height: 138px;
+	background: #4794DC;
+  color: #FFF;
+  border-radius: 0px 30px 30px 0px;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.25s;
+}
+[type="radio"]:checked + label{
+	background: #D9D9D9;
+  color: black;
+  border-radius: 30px 0px 0px 30px;
+}
+[type="radio"]:nth-of-type(1):checked ~ .gallery .card:not(.image),
+[type="radio"]:nth-of-type(2):checked ~ .gallery .card:not(.video)
+{
+  display: none;
+}
+.gallery{
+  display: grid;
+	justify-content: center;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.card{
+  margin: 0;
+  background: darkslateblue;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px silver;
+  transition: box-shadow 0.35s;
+}
+.card:hover{
+  box-shadow: 0 0 25px #0009;
+}
+.card__image{
+  width: 100%;
+  object-fit: cover;
+}
+.card__caption{
+	font-weight: bold;
+  font-variant: small-caps;
+  padding: 0.5rem;
+  text-align: center;
+  color: gold;
+}
+

@@ -10,6 +10,8 @@ import { AboutComponent } from './Components/about/about.component';
 import { ImportantComponent } from './Components/important/important.component';
 import { ImagesComponent } from './Components/images/images.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { ContactComponent } from './Components/contact/contact.component';
+import { GalleryComponent } from './Components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './Components/footer/footer.component';
     AboutComponent,
     ImportantComponent,
     ImagesComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

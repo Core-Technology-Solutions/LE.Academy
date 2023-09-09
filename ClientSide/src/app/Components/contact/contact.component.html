@@ -1,0 +1,45 @@
+<section class="container">
+  <div class="row mx-auto py-3 col-lg-9 col-md-12">
+    <form class="container py-5" id="contact-form" method="post" action="email.php">
+      <div class="mb-3 input-group-lg">
+        <label for="name" class="form-label mb-3">الإسم</label>
+        <input type="text" name="name" class="form-control" id="name" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
+      </div>
+      <div class="mb-3 input-group-lg">
+        <label for="mobile_num" class="form-label mb-3">الجوال</label>
+        <input name="mobile_num[main]" type="text" id="mobile_num" class="form-control input-group-lg" maxlength="15"
+          aria-describedby="inputGroup-sizing-lg" aria-label="Sizing example input" autocomplete="phone" required>
+        <br />
+        <span id="error-msg" class="hide text-danger d-block mt-2 mx-4"></span>
+        <p id="result"></p>
+      </div>
+      <div class="mb-3 input-group-lg">
+        <label for="email" class="form-label mb-3">البريد الالكترونى</label>
+        <input type="email" name="email" class="form-control" id="email" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg" required>
+      </div>
+      <div class="col-lg-12">
+        <span id="emailError" class="text-danger d-block mb-3 mx-4"></span>
+      </div>
+      <div class="mb-5">
+        <label for="subject" class="form-label mb-3"> نوع الخدمة التى تحتاجها</label>
+        <select class="form-select form-select-lg mb-3" id="subject" name="subject"
+          aria-label=".form-select-lg example">
+          <option selected disabled>-اختيار-</option>
+          <option value="  "> Electronics </option>
+          <option value="  "> C++ </option>
+          <option value="  "> Arduino </option>
+          <option value=" "> Python </option>
+          <option value=" "> Scratch 3 </option>
+          <option value="  "> SCratch Junior </option>
+          <option value=""> Robotics Vex Vr </option>
+        </select>
+      </div>
+      <div class="mb-3 mx-auto text-center">
+        <button type="submit" value="Submit" id="contact-btn" class="my-3 btn btn-lg">إرسال</button>
+      </div>
+      <div id="response-message" class="text-center"></div>
+    </form>
+  </div>
+</section>

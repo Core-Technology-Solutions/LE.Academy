@@ -1,0 +1,55 @@
+#contact-us {
+  margin-top: 150px;
+}
+
+#contact-form{
+  padding: 50px 50px;
+}
+
+#contact-btn {
+  background-color: #d37209;
+  color: #eee;
+  width: 180px;
+  height: 50px;
+  font-size: 22px;
+}
+
+#contact-btn:hover {
+  background-color: #005947;
+  color: #eee;
+}
+
+.form-control {
+  border-radius: 20px;
+  border: 2px solid #136CBC;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border: 2px solid #136CBC;
+}
+
+.form-select {
+  border-radius: 20px;
+  border: 2px solid #136CBC;
+  box-shadow: none;
+  color: #136CBC;
+}
+
+.form-select:focus {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border: 2px solid #136CBC;
+  color: #136CBC;
+}
+
+.form-select option {
+  background-color: #fdf9f9;
+  color: #136CBC;
+}
+
+.form-select option:hover,
+.form-select option:focus  {
+  background-color: #C7D4ED;
+  color: #2469A8;
+}
