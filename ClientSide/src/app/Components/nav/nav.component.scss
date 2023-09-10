@@ -25,4 +25,19 @@ nav{
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 }
+
+#navBtn{
+  background: linear-gradient(191deg, #136CBC 8.32%, rgba(48, 104, 154, 0.53) 117.47%, rgba(19, 108, 188, 0.00) 241.17%);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  border: none;
+  width: 150px;
+  height: 60px;
+  padding: 14px 14px;
+  border-radius: 20px;
+}
+
 /* End Navbar */
