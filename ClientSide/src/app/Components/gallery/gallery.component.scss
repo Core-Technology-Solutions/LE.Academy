@@ -1,3 +1,20 @@
+.page-header {
+  height: 550px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header-inner {
+  position: relative;
+  top: 50%;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
+}
+
+
 [type="radio"]{
   display: none;
 }
@@ -9,7 +26,7 @@ label{
 	background: #4794DC;
   color: #FFF;
   border-radius: 0px 30px 30px 0px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 36px;
   font-style: normal;
   font-weight: 700;

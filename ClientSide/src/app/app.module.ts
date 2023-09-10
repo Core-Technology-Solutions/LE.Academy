@@ -12,6 +12,9 @@ import { ImagesComponent } from './Components/images/images.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { GalleryComponent } from './Components/gallery/gallery.component';
+import { NavComponent } from './Components/nav/nav.component';
+import { HomeComponent } from './Components/home/home.component';
+import { NotFoundComponent } from './Components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { GalleryComponent } from './Components/gallery/gallery.component';
     ImagesComponent,
     FooterComponent,
     ContactComponent,
-    GalleryComponent
+    GalleryComponent,
+    NavComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

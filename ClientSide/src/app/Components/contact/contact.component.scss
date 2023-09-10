@@ -1,3 +1,19 @@
+.page-header {
+  height: 550px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header-inner {
+  position: relative;
+  top: 50%;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
+}
+
 #contact-us {
   margin-top: 150px;
 }
@@ -50,6 +66,6 @@
 
 .form-select option:hover,
 .form-select option:focus  {
-  background-color: #C7D4ED;
+  background-color: #31e040;
   color: #2469A8;
 }
