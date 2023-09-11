@@ -10,12 +10,16 @@
   top: 50%;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-  color: var(--light);
+.page-header-inner h1{
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
 }
 
-#contact-us {
-  margin-top: 150px;
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
 }
 
 #contact-form{
@@ -23,16 +27,22 @@
 }
 
 #contact-btn {
-  background-color: #d37209;
-  color: #eee;
-  width: 180px;
-  height: 50px;
-  font-size: 22px;
+  background: linear-gradient(191deg, #136CBC 8.32%, rgba(48, 104, 154, 0.53) 117.47%, rgba(19, 108, 188, 0.00) 241.17%);
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  border: none;
+  width: 294px;
+  height: 92px;
+  padding: 14px 14px;
+  border-radius: 20px;
 }
 
-#contact-btn:hover {
-  background-color: #005947;
-  color: #eee;
+#contact-btn:hover,
+#contact-btn:focus {
+    box-shadow: rgb(254, 254, 254) 0px 10px 50px -20px, rgb(246, 243, 243) 0px 10px 20px -30px;
 }
 
 .form-control {
@@ -68,4 +78,15 @@
 .form-select option:focus  {
   background-color: #31e040;
   color: #2469A8;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  #contact-btn {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 70px;
+    padding: 14px 14px;
+    border-radius: 20px;
+  }
 }

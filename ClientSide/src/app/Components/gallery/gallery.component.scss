@@ -10,6 +10,14 @@
   top: 50%;
 }
 
+.page-header-inner h1{
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--light);
 }

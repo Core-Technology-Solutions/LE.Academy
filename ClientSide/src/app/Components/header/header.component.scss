@@ -1,44 +1,41 @@
-header{
-  height: 100vh;
+#head {
+  height: 100vh !important;
 }
 
-#carouselExampleInterval{
-  margin-bottom: 30px;
-}
-.carousel-item img{
-  object-fit: cover;
-  height: 100vh;
+#carouselExampleInterval .carousel-inner .carousel-item img {
   width: 100%;
-  display: relative;
-  top: 0;
 }
-.carousel-item img{
-  height: 1005px;
-}
-.carousel-indicators{
+
+.carousel-indicators {
   display: none;
 }
-.carousel-control-prev{
+
+.carousel-control-prev {
   display: none;
 }
-.carousel-control-next{
+
+.carousel-control-next {
   display: none;
 }
-.carousel-caption{
+
+.carousel-caption {
   position: absolute;
   top: 30%;
 }
-.carousel-caption h1{
+
+.carousel-caption h1 {
   font-size: 3rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
-.carousel-caption p{
+
+.carousel-caption p {
   font-size: 1.6rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
-.carousel-caption button{
+
+.carousel-caption button {
   background: linear-gradient(191deg, #136CBC 8.32%, rgba(48, 104, 154, 0.53) 117.47%, rgba(19, 108, 188, 0.00) 241.17%);
   color: #ffffff;
   font-size: 2.2rem;
@@ -51,7 +48,41 @@ header{
   padding: 14px 14px;
   border-radius: 20px;
 }
+
 .btnHeader:hover,
 .btnHeader:focus {
   box-shadow: rgb(254, 254, 254) 0px 10px 50px -20px, rgb(246, 243, 243) 0px 10px 20px -30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  #head {
+    position: static;
+    height: 60vh !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 12%;
+  }
+
+  .carousel-caption h1 {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  .carousel-caption button {
+    font-size: 1rem;
+    width: 116px;
+    height: 40px;
+    padding: 8px 10px;
+  }
 }

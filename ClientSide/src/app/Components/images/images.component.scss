@@ -26,3 +26,10 @@
   font-family: 'Poppins', sans-serif;
   color: rgb(29,92,158);
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  .card  {
+    margin: auto;
+  }
+}

@@ -40,4 +40,25 @@ nav{
   border-radius: 20px;
 }
 
+#logo{
+  width: 175px;
+  height: 157px;
+}
 /* End Navbar */
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  #logo {
+    width: 59px;
+    height: 53px;
+  }
+  .nav-item a {
+    font-size: 1rem;
+  }
+  #navBtn{
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    padding: 10px 14px;
+    border-radius: 20px;
+  }
+}

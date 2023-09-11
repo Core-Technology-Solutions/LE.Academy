@@ -1,13 +1,13 @@
 #boxes {
-  margin-top: 100px;
-  z-index: 999;
   position: relative;
-  top: -50%
+  margin-top: 10%;
+  top: -90%;
+  z-index: 999;
 }
 .box{
   background: rgba(19, 108, 188, 0.80);
   color: #ffffff;
-  width: 397px;
+  width: 25rem;
   height: 140px;
   border-radius: 20px;
   padding: 20px 20px;
@@ -30,4 +30,17 @@
   width: 90px;
   height: 90px;
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  #boxes {
+    position: static;
+    margin-top: 50px;
+  }
+  .box{
+    height: 10rem;
+    border-radius: 20px;
+    padding: 20px 20px;
+  }
 }

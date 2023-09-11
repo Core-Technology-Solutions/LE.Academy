@@ -7,8 +7,33 @@
 }
 .title h1 {
   text-align: center;
-  font-size: 2.6rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: 'Poppins', sans-serif;
   color: rgb(29,92,158);
+}
+p{
+  color: #FFF;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 168%; /* 33.6px */
+}
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  .card  {
+    display: none;
+  }
+  #about{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 }
