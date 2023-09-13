@@ -27,4 +27,8 @@ steps
 12- install fontawesome => npm install --save @fortawesome/fontawesome-free
 	In your Angular project, you'll need to import the Font Awesome stylesheets in your styles.scss
 	@import '~@fortawesome/fontawesome-free/css/all.css';
-13- 
+-------------------------------------------------------------------------------------------
+13- Create Services 
+1- In appmodule.ts
+	- import {HttpClientModule} from '@angular/common/http';
+	- but HttpClientModule in Import array

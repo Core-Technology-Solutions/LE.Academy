@@ -15,7 +15,7 @@ import { GalleryComponent } from './Components/gallery/gallery.component';
 import { NavComponent } from './Components/nav/nav.component';
 import { HomeComponent } from './Components/home/home.component';
 import { NotFoundComponent } from './Components/not-found/not-found.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,8 @@ import { NotFoundComponent } from './Components/not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
