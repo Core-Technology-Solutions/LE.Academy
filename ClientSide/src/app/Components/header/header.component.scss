@@ -1,6 +1,3 @@
-#head {
-  height: 100vh !important;
-}
 
 #carouselExampleInterval .carousel-inner .carousel-item img {
   width: 100%;
@@ -20,19 +17,21 @@
 
 .carousel-caption {
   position: absolute;
-  top: 30%;
+  top: 28%;
 }
 
 .carousel-caption h1 {
   font-size: 3rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 50px;
 }
 
 .carousel-caption p {
   font-size: 1.6rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 100px;
 }
 
 .carousel-caption button {
@@ -54,30 +53,28 @@
   box-shadow: rgb(254, 254, 254) 0px 10px 50px -20px, rgb(246, 243, 243) 0px 10px 20px -30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
-  #head {
-    position: static;
-    height: 60vh !important;
-  }
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
   .carousel-caption {
     position: absolute;
-    top: 12%;
+    top: 10%;
   }
 
   .carousel-caption h1 {
     color: #FFF;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
   }
 
   .carousel-caption p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
   }
   .carousel-caption button {
     font-size: 1rem;
@@ -85,4 +82,8 @@
     height: 40px;
     padding: 8px 10px;
   }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
 }

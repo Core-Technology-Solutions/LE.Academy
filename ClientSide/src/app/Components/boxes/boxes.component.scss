@@ -1,18 +1,19 @@
 #boxes {
   position: relative;
-  margin-top: 10%;
-  top: -90%;
+  top: -50%;
   z-index: 999;
 }
-.box{
+
+.box {
   background: rgba(19, 108, 188, 0.80);
   color: #ffffff;
-  width: 25rem;
+  width: 22rem;
   height: 140px;
   border-radius: 20px;
   padding: 20px 20px;
 }
-.box-info h3{
+
+.box-info h3 {
   color: #FFF;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
@@ -21,26 +22,27 @@
   line-height: normal;
 }
 
-.box-info p{
+.box-info p {
   font-size: 0.8rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
-.box-img{
+
+.box-img {
   width: 90px;
   height: 90px;
-
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   #boxes {
-    position: static;
-    margin-top: 50px;
+    display: block;
   }
-  .box{
+
+  .box {
     height: 10rem;
     border-radius: 20px;
     padding: 20px 20px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {}
