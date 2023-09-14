@@ -1,5 +1,5 @@
 import { Component, HostListener  } from '@angular/core';
-
+import { DownloadPDFService } from '../../Services/download-pdf.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,6 +7,7 @@ import { Component, HostListener  } from '@angular/core';
 })
 export class NavComponent {
   isNavbarHidden = false;
+  constructor(private downloadPDFService: DownloadPDFService) {}
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -17,4 +18,9 @@ export class NavComponent {
       this.isNavbarHidden = false;
     }
   }
+
+downloadPdf() {
+    this.downloadPDFService.downloadPdf();
+  }
+
 }

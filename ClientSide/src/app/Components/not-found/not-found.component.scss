@@ -1,5 +1,5 @@
 .page-header {
-  height: 300px;
+  height: 550px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,6 +10,11 @@
   top: 50%;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-  color: var(--light);
+.page-header-inner h1{
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
 }
+
