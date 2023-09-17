@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import {EmailServiceService} from '../../Services/email-service.service';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  name: string = '';
+  email: string = '';
+  phone: string = '';
+
+  constructor(private emailService: EmailServiceService) {}
+
+  onSubmit() {
+    this.emailService.sendEmail(this.name, this.email, this.phone).subscribe(
+      response => {
+        console.log('Email sent successfully!');
+      },
+      error => {
+        console.log('Error sending email:', error);
+      }
+    );
+  }
 }
