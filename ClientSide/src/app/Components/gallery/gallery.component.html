@@ -10,63 +10,87 @@
   </div>
 </div>
 <!-- Page Header End -->
-
-<section class="container">
-  <input type="radio" name="filter" id="image" /><label for="image"
-    >الصور</label
-  >
-  <input type="radio" name="filter" id="video" checked /><label for="video"
-    >الفيديوهات</label
-  >
-
-  <div class="gallery">
-    <figure class="card image">
-      <img
-        class="card__image"
-        loading="lazy"
-        src="https://picsum.photos/id/10/300"
-        alt=""
-      />
-    </figure>
-    <figure class="card video">
-      <img
-        class="card__image"
-        loading="lazy"
-        src="https://picsum.photos/id/1005/300"
-        alt=""
-      />
-    </figure>
-    <figure class="card image">
-      <img
-        class="card__image"
-        loading="lazy"
-        src="https://picsum.photos/id/218/300"
-        alt=""
-      />
-    </figure>
-    <figure class="card video">
-      <img
-        class="card__image"
-        loading="lazy"
-        src="https://picsum.photos/id/1012/300"
-        alt=""
-      />
-    </figure>
-    <figure class="card video">
-      <img
-        class="card__image"
-        loading="lazy"
-        src="https://picsum.photos/id/1027/300"
-        alt=""
-      />
-    </figure>
-    <figure class="card image">
-      <img
-        class="card__image"
-        loading="lazy"
-        src="https://picsum.photos/id/306/300"
-        alt=""
-      />
-    </figure>
+<div class="container mt-4">
+  <!-- Filter Buttons (First Row) -->
+  <div class="row mb-4">
+    <div class="btnFilter col-lg-12 text-center">
+      <button class="btn" [ngClass]="{ 'active-filter': showImages }" (click)="filterImages()"> الصور</button>
+      <button class="btn" [ngClass]="{ 'active-filter': !showImages }" (click)="filterVideos()"> الفيديوهات</button>
+    </div>
   </div>
-</section>
+
+  <div class="gallery py-3">
+    <!-- Title: 1 -->
+    <h2 class="text-center my-5" *ngIf="showImages"> مسابقة Robot Callenge Egypt 2022 </h2>
+    <div class="row g-4" *ngIf="showImages">
+        <!-- Display up to 7 images for 1 -->
+        <div class="col-lg-3 col-md-4 col-md-6 col-sm-12">
+          <img src="../../../assets/image/img-01/img-1.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-md-6 col-sm-12">
+          <img src="../../../assets/image/img-01/img-2.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-md-6 col-sm-12">
+          <img src="../../../assets/image/img-01/img-3.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-md-6 col-sm-12">
+          <img src="../../../assets/image/img-01/img-4.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-md-6 col-sm-12">
+          <img src="../../../assets/image/img-01/img-5.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-md-6 col-sm-12">
+          <img src="../../../assets/image/img-01/img-5-1.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <img src="../../../assets/image/img-01/img-7.png" alt="">
+        </div>
+                <!-- Add more images as needed -->
+    </div>
+
+    <!-- Title: 2 -->
+    <h2 class="text-center my-5" *ngIf="showImages">صور فرع مدينتى  </h2>
+    <div class="row g-4" *ngIf="showImages">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <img src="../../../assets/image/img-01/img-7.png" alt="">
+      </div>
+    </div>
+
+    <!-- Title: 3 -->
+    <h2 *ngIf="showImages"> المشاركة في مبادرة المدارس المحورية للتعرف على علم الروبوت </h2>
+    <div class="image-row" *ngIf="showImages">
+        <!-- Display up to 8 images for 3 -->
+        <img src="flower1.jpg" alt="Flower 1">
+        <img src="flower2.jpg" alt="Flower 2">
+        <!-- Add more images as needed -->
+    </div>
+    <!-- Title: 4 -->
+    <h2 *ngIf="showImages"> بروتوكول تعاون مع معهد الرواد الازهري الخاص </h2>
+    <div class="image-row" *ngIf="showImages">
+        <!-- Display up to 8 images for 4 -->
+        <img src="flower1.jpg" alt="Flower 1">
+        <img src="flower2.jpg" alt="Flower 2">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Title: 5 -->
+    <h2 *ngIf="showImages">  بروتوكول تعاون مع مدرسة طيبه الخاصة </h2>
+    <div class="image-row" *ngIf="showImages">
+        <!-- Display up to 8 images for 5 -->
+        <img src="flower1.jpg" alt="Flower 1">
+        <img src="flower2.jpg" alt="Flower 2">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-row" *ngIf="!showImages">
+        <!-- Display videos here -->
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Add more videos as needed -->
+    </div>
+
+    <!-- Add more titles, images, and videos as needed -->
+</div>

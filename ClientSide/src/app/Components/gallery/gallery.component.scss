@@ -17,21 +17,12 @@
   line-height: normal;
   font-family: 'Poppins', sans-serif;
 }
-
-.breadcrumb-item + .breadcrumb-item::before {
-  color: var(--light);
-}
-
-
-[type="radio"]{
-  display: none;
-}
-label{
+.btnFilter button:nth-child(1) {
   align-items: center;
   padding: 0.25rem 0.75rem;
-  width: 530px;
-  height: 138px;
-	background: #4794DC;
+  width: 500px;
+  height: 130px;
+  background: #4794DC;
   color: #FFF;
   border-radius: 0px 30px 30px 0px;
   font-family: 'Poppins';
@@ -42,45 +33,57 @@ label{
   cursor: pointer;
   transition: 0.25s;
 }
-[type="radio"]:checked + label{
-	background: #D9D9D9;
+
+.btnFilter button:nth-child(2) {
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  width: 500px;
+  height: 130px;
+  background: #D9D9D9;
   color: black;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 30px 0px 0px 30px ;
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.25s;
 }
-[type="radio"]:nth-of-type(1):checked ~ .gallery .card:not(.image),
-[type="radio"]:nth-of-type(2):checked ~ .gallery .card:not(.video)
-{
-  display: none;
+/* Custom CSS for gallery */
+.gallery-img {
+  max-width: 100%;
+  height: auto;
 }
-.gallery{
-  display: grid;
-	justify-content: center;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-auto-rows: 1fr;
-  grid-gap: 1rem;
-  padding: 0.5rem;
-  margin-top: 1rem;
+img {
+  width: 280px;
+  height: 200px;
 }
-.card{
-  margin: 0;
-  background: darkslateblue;
-  border-radius: 0.25rem;
-  overflow: hidden;
-  box-shadow: 0 0 10px silver;
-  transition: box-shadow 0.35s;
+.gallery-video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-.card:hover{
-  box-shadow: 0 0 25px #0009;
+
+/* Adjust card styling as needed */
+.card {
+  border: 1px solid #ccc;
 }
-.card__image{
-  width: 100%;
-  object-fit: cover;
+
+.card-title {
+  font-size: 16px;
 }
-.card__caption{
-	font-weight: bold;
-  font-variant: small-caps;
-  padding: 0.5rem;
-  text-align: center;
-  color: gold;
+
+/* Responsive layout adjustments */
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px)  {
+  .btnFilter button:nth-child(1),
+  .btnFilter button:nth-child(2) {
+    width: 150px;
+    height: 50px;
+  }
 }
+
+
 
