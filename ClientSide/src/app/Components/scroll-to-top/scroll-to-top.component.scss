@@ -1,0 +1,22 @@
+button {
+  background-color: #165086;
+  box-shadow: none;
+  border: transparent;
+  padding: 10px 10px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  z-index: 999; /* Set a high z-index value to overlay the footer */
+}
+
+button i {
+  font-size: 2rem;
+}
+
+/* Styling for the footer */
+.app-footer {
+  background-color: #f0f0f0; /* Adjust background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  /* Add any other styles for your footer */
+}

@@ -10,11 +10,12 @@ export class EmailServiceService {
 
   constructor(private http: HttpClient) { }
 
-  sendEmail(name: string, email: string, phone: string) {
+  sendEmail(name: string, email: string, phone: string, selectedCourse: string) {
     const data = {
       name: name,
       email: email,
-      phone: phone
+      phone: phone,
+      selectedCourse: selectedCourse
     };
     return this.http.post(this.emailUrl, data);
   }

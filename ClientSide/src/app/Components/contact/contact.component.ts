@@ -11,11 +11,11 @@ export class ContactComponent {
   name: string = '';
   email: string = '';
   phone: string = '';
-
+  selectedCourse: string = '';
   constructor(private emailService: EmailServiceService) {}
 
   onSubmit() {
-    this.emailService.sendEmail(this.name, this.email, this.phone).subscribe(
+    this.emailService.sendEmail(this.name, this.email, this.phone, this.selectedCourse).subscribe(
       response => {
         console.log('Email sent successfully!');
       },

@@ -17,6 +17,7 @@ server.post('/send-email', (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.phone;
+    const selectedCourse = req.body.selectedCourse;
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -29,11 +30,12 @@ server.post('/send-email', (req, res) => {
     const mailOptions = {
         from: 'lamiaaselim1896@gmail.com',
         to: 'info@cts-egy.com', // Replace with recipient email address
-        subject: 'LE Academy Form Submission',
+        subject: 'Form LE Academy Submission',
         text: `
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
+        Course: ${selectedCourse}
     `
     };
 

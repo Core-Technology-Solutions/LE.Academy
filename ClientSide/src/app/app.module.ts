@@ -17,6 +17,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { NotFoundComponent } from './Components/not-found/not-found.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ScrollToTopComponent } from './Components/scroll-to-top/scroll-to-top.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     GalleryComponent,
     NavComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,

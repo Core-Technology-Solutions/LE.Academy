@@ -31,15 +31,15 @@
       <div class="mb-5">
         <label for="subject" class="form-label mb-3"> الكورس </label>
         <select class="form-select form-select-lg mb-3" id="subject" name="subject"
-          aria-label=".form-select-lg example">
+          aria-label=".form-select-lg example"  [(ngModel)]="selectedCourse">
           <option selected disabled>-اختيار-</option>
-          <option value="  "> Electronics </option>
-          <option value="  "> C++ </option>
-          <option value="  "> Arduino </option>
-          <option value=" "> Python </option>
-          <option value=" "> Scratch 3 </option>
-          <option value="  "> SCratch Junior </option>
-          <option value=""> Robotics Vex Vr </option>
+          <option value="Electronics"> Electronics </option>
+          <option value="C++"> C++ </option>
+          <option value="Arduino"> Arduino </option>
+          <option value="Python"> Python </option>
+          <option value="Scratch 3"> Scratch 3 </option>
+          <option value="SCratch Junior"> SCratch Junior </option>
+          <option value="Robotics Vex Vr"> Robotics Vex Vr </option>
         </select>
       </div>
       <div class="mb-3 mx-auto text-center">
