@@ -8,10 +8,10 @@
 </div>
 <!-- Page Header End -->
 <section class="container py-3">
-  <div class="row mx-auto py-3 col-lg-9 col-md-12">
+  <div  *ngIf="!isSuccess" class="row mx-auto py-3 col-lg-9 col-md-12">
     <form class="container py-5" id="contact-form" (ngSubmit)="onSubmit()">
       <div class="mb-3 input-group-lg">
-        <label for="name" class="form-label mb-3">الإسم</label>
+        <label for="name" class="form-label mb-3">الاسم</label>
         <input type="text" name="name" class="form-control" id="name" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-lg" [(ngModel)]="name" required>
       </div>
@@ -34,11 +34,11 @@
           aria-label=".form-select-lg example"  [(ngModel)]="selectedCourse">
           <option selected disabled>-اختيار-</option>
           <option value="Electronics"> Electronics </option>
-          <option value="C++"> C++ </option>
+          <option value="C++"> ++C </option>
           <option value="Arduino"> Arduino </option>
           <option value="Python"> Python </option>
           <option value="Scratch 3"> Scratch 3 </option>
-          <option value="SCratch Junior"> SCratch Junior </option>
+          <option value="Scratch Junior"> Scratch Junior </option>
           <option value="Robotics Vex Vr"> Robotics Vex Vr </option>
         </select>
       </div>
@@ -47,5 +47,8 @@
       </div>
       <div id="response-message" class="text-center"></div>
     </form>
+  </div>
+  <div *ngIf="isSuccess" class="text-center">
+    <p class="fs-2 alert alert-success p-5">تم إرسال طلبك ... سيتم التواصل معك قريباً</p>
   </div>
 </section>

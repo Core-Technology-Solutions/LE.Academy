@@ -25,7 +25,14 @@
 #contact-form{
   padding: 50px 50px;
 }
-
+label {
+  color: #2469A8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 #contact-btn {
   background: linear-gradient(191deg, #136CBC 8.32%, rgba(48, 104, 154, 0.53) 117.47%, rgba(19, 108, 188, 0.00) 241.17%);
   color: #ffffff;
