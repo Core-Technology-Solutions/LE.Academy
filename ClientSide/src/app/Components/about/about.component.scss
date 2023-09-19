@@ -25,7 +25,9 @@ p{
 }
 .card {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 20px;
 }
+
 .certifcate {
   position: relative;
   text-align: left;
@@ -36,7 +38,7 @@ p{
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px); /* Move up by 10 pixels */
+    transform: translateY(-12px); /* Move up by 10 pixels */
   }
 }
 

@@ -88,14 +88,24 @@ video {
 }
 
 /* Responsive layout adjustments */
-@media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px)  {
+
+@media (max-width: 768px) {
+  /* Styles for tablets and mobile devices */
   .btnFilter button:nth-child(1),
   .btnFilter button:nth-child(2) {
-    width: 150px;
+    width: 300px;
     height: 50px;
   }
 }
 
+@media (max-width: 480px) {
+  /* Styles for mobile devices */
+  .btnFilter button:nth-child(1),
+  .btnFilter button:nth-child(2) {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
 
 
