@@ -26,6 +26,19 @@ p{
 .card {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.certifcate {
+  position: relative;
+  text-align: left;
+  animation: bounce 2s infinite alternate;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px); /* Move up by 10 pixels */
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {

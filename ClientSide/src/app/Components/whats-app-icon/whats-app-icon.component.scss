@@ -18,8 +18,10 @@ a {
   z-index: 999;
 }
 
-a:hover {
+a:hover,
+a:focus {
   background: #37d645;
   color: #FFF;
 
 }
+
