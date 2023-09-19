@@ -18,6 +18,7 @@ import { NotFoundComponent } from './Components/not-found/not-found.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ScrollToTopComponent } from './Components/scroll-to-top/scroll-to-top.component';
+import { WhatsAppIconComponent } from './Components/whats-app-icon/whats-app-icon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { ScrollToTopComponent } from './Components/scroll-to-top/scroll-to-top.c
     NavComponent,
     HomeComponent,
     NotFoundComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    WhatsAppIconComponent
   ],
   imports: [
     BrowserModule,
