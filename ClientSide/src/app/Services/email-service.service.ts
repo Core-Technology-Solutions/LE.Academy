@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class EmailServiceService {
 
-  private emailUrl = 'http://localhost:8080/send-email'; // Update with your server URL
+  private emailUrl = 'https://le-academy.onrender.com/send-email'; // Update with your server URL
 
   constructor(private http: HttpClient) {}
 
