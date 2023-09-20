@@ -50,7 +50,7 @@ server.post('/send-email', (req, res) => {
 
 const port = process.env.PORT || 8080;
 
-mongoose.connect("mongodb://127.0.0.1:27017/LE-Academy")
+mongoose.connect("mongodb+srv://LE-ACADEMY:LE-ACADEMY@cluster0.yqhbyva.mongodb.net")
     .then(() => {
         console.log("DB connection established")
         server.listen(port, () => {

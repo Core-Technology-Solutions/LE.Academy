@@ -1,5 +1,5 @@
-import { Component , OnInit} from '@angular/core';
-import { CoursesService } from 'src/app/Services/courses.service';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-courses',
@@ -7,17 +7,7 @@ import { CoursesService } from 'src/app/Services/courses.service';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent {
-  courses:any=[]
-  errMessage:any;
-  constructor (private courseService: CoursesService) {
 
-  }
+  constructor () { }
 
-  ngOnInit():void {
-    this.courseService.getCourses().subscribe({
-      next: data=> this.courses = data,
-      error: error=> this.errMessage = error
-    })
-
-  }
 }
