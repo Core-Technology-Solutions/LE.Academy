@@ -5,4 +5,4 @@ install sass => npm install -g sass
 install angular => npm install -g @angular/cli
 Create project => ng new ClientSide
 
-
+------------ Configration deployment ----------
