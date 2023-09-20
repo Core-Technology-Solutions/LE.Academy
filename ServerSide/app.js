@@ -4,8 +4,6 @@ const cors = require('cors'); // Import the 'cors' module
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-const courseRouter = require('./routes/courseRouter');
-const userRouter = require('./routes/userRouter');
 const contactRouter = require('./routes/contactRouter');
 const server = express();
 
@@ -28,7 +26,7 @@ server.post('/send-email', (req, res) => {
     });
 
     const mailOptions = {
-        from: 'lamiaaselim1896@gmail.com',
+        from: email,
         to: 'info@cts-egy.com', // Replace with recipient email address
         subject: 'Form LE Academy Submission',
         text: `
@@ -71,9 +69,6 @@ server.use((request, response, next) => {
 });
 /* -----------------Routes ----------------- */
 server.use(express.json());
-
-server.use(courseRouter);
-server.use(userRouter);
 server.use(contactRouter);
 
 // Second Mw loading -- authentication
