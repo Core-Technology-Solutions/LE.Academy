@@ -17,7 +17,7 @@
   background: rgba(19, 108, 188, 0.80);
   color: #ffffff;
   width: 30%;
-  height: 140px;
+  height: 120px;
   border-radius: 20px;
   padding: 20px 20px;
 }
@@ -32,14 +32,14 @@
 }
 
 .box-info p {
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
-.box-img {
-  width: 90px;
-  height: 90px;
+.box-img img {
+  width: 70px;
+  height: 70px;
 }
 
 @media (max-width: 991px) {
