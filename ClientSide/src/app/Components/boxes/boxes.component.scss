@@ -1,20 +1,21 @@
 .container {
-  position: absolute; /* Position the container absolutely */
-  top: 750px;
+  position: absolute;
+  /* Position the container absolutely */
+  top: 70%;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: transparent; /* Add a semi-transparent background */
-  z-index: 1; /* Place the boxes component above the carousel (which might have z-index: 0 by default) */
+  background-color: transparent;
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .box {
   background: rgba(19, 108, 188, 0.80);
   color: #ffffff;
-  width: 22rem;
+  width: 30%;
   height: 140px;
   border-radius: 20px;
   padding: 20px 20px;
@@ -42,9 +43,12 @@
 
 @media (max-width: 991px) {
   .container {
-    position: static; /* Remove absolute positioning */
-    background-color: transparent; /* Remove background */
-    z-index: 0; /* Place the boxes behind the carousel on smaller screens */
+    position: static;
+    /* Remove absolute positioning */
+    background-color: transparent;
+    /* Remove background */
+    z-index: 0;
+    /* Place the boxes behind the carousel on smaller screens */
   }
 
   .box {
@@ -58,13 +62,16 @@
 /* Styles for larger screens (e.g., desktop) */
 @media (min-width: 992px) {
   .container {
-    position: absolute; /* Position the container absolutely */
+    position: absolute;
+    /* Position the container absolutely */
     top: 650px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: transparent; /* Add a semi-transparent background */
-    z-index: 1; /* Place the boxes component above the carousel on larger screens */
+    background-color: transparent;
+    /* Add a semi-transparent background */
+    z-index: 1;
+    /* Place the boxes component above the carousel on larger screens */
     display: flex;
     align-items: center;
     justify-content: center;
