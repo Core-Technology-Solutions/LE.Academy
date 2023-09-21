@@ -43,7 +43,14 @@
         </select>
       </div>
       <div class="mb-3 mx-auto text-center">
-        <button type="submit" value="Submit" id="contact-btn" [disabled]="isSubmitDisabled" class="my-3 btn btn-lg">إرسال</button>
+        <button type="submit" value="Submit" id="contact-btn" [disabled]="isSubmitDisabled" class="my-3 btn btn-lg">
+         <!-- {{ isSubmitDisabled ? 'جارى الإرسال...' : 'إرسال' }} -->
+          <span *ngIf="isSubmitDisabled">
+            جارى الإرسال 
+            <i class="fa-solid fa-spinner fa-spin"></i> 
+          </span>
+          <span *ngIf="!isSubmitDisabled">إرسال</span>
+        </button>
       </div>
       <div id="response-message" class="text-center"></div>
     </form>
