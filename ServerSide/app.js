@@ -26,7 +26,7 @@ server.post('/send-email', (req, res) => {
     });
 
     const mailOptions = {
-        from: email,
+        from: 'mohamed249m@gmail.com',
         to: 'info@cts-egy.com', // Replace with recipient email address
         subject: 'Form LE Academy Submission',
         text: `
