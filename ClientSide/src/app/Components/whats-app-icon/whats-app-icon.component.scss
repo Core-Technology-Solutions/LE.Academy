@@ -1,21 +1,12 @@
 a {
-  box-shadow: none;
-  width: 250px;
-  height: 86.998px;
-  padding: 10px 5px;
-  color: #FFF;
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  border-radius: 60px;
-  border: none;
-  background: #4cde58;
   position: fixed;
-  top: 500px; /* Adjust the distance from the bottom as needed */
-  left: 20px; /* Adjust the distance from the right as needed */
+  bottom: 20px;
+  left: 20px;
   z-index: 999;
+  border-radius: 50%;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #25d366;
 }
 
 a:hover,
