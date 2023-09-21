@@ -51,7 +51,7 @@
     /* Add styles for individual boxes on mobile and tablet screens here */
     /* For example, you can adjust their width and margin */
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 20px;
   }
 }
 
@@ -59,7 +59,7 @@
 @media (min-width: 992px) {
   .container {
     position: absolute; /* Position the container absolutely */
-    top: 750px;
+    top: 650px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -70,7 +70,7 @@
     justify-content: center;
   }
 
-  // .box {
-  //   /* Add styles for individual boxes on larger screens here */
-  // }
+  #boxes {
+    margin-top: 50px;
+  }
 }
