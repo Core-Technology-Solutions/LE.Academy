@@ -9,7 +9,17 @@
 .card img{
   height: 350px;
   border: 5px solid #136CBC;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
 }
+
+.card {
+  border-radius: 5%;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+
 .more a{
   text-decoration: none;
 }
