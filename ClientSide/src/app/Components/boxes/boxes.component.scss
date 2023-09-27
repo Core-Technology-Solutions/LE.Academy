@@ -21,6 +21,10 @@
   border-radius: 20px;
   padding: 20px 20px;
 }
+.box:hover,
+.box:focus {
+  box-shadow: rgb(254, 254, 254) 5px 5px 50px -30px, rgb(246, 243, 243) 5px 5px 25px -40px;
+}
 
 .box-info h3 {
   color: #FFF;

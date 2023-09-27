@@ -12,6 +12,9 @@ nav{
   font-family: 'Droid Arabic Kufi', sans-serif;
 }
 
+.nav-item a:hover{
+  color: #136CBC;
+}
 .navbar-toggler {
   font-size: 20px;
   color: white;
@@ -40,6 +43,10 @@ nav{
   border-radius: 20px;
 }
 
+#navBtn:hover,
+#navBtn:focus {
+  box-shadow: rgb(254, 254, 254) 0px 10px 50px -20px, rgb(246, 243, 243) 0px 10px 20px -30px;
+}
 #logo{
   width: 175px;
   height: 157px;
