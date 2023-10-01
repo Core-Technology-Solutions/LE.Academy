@@ -86,6 +86,11 @@ h2 {
 img {
   width: 280px;
   height: 200px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.2);
 }
 
 .gallery-video {
