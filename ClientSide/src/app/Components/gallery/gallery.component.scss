@@ -15,18 +15,18 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: -999;
 }
+
 .btn {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #fff;
 }
 
-
 .active-filter {
-  background-color: #4794DC; 
-  color: #fff; 
+  background-color: #4794dc;
+  color: #fff;
 }
 
 .btnFilter button:nth-child(1) {
@@ -34,9 +34,9 @@
   padding: 0.25rem 0.75rem;
   width: 40%;
   height: 130px;
-  color: #FFF;
+  color: #fff;
   border-radius: 0px 30px 30px 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -50,9 +50,9 @@
   padding: 0.25rem 0.75rem;
   width: 40%;
   height: 130px;
-  color: #FFF;
+  color: #fff;
   border-radius: 30px 0px 0px 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -62,24 +62,30 @@
 }
 
 h2 {
-  color: #2469A8;
+  color: #2469a8;
   text-align: right;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-/* Custom CSS for gallery */
+.gallery{
+  width: 80%;
+  margin: auto;
+
+}
+
+
 .gallery-img {
   max-width: 100%;
   height: auto;
 }
 
 img {
-  width: 350px;
-  height: 300px;
+  width: 280px;
+  height: 200px;
 }
 
 .gallery-video {
@@ -94,7 +100,6 @@ video {
   height: 373px;
 }
 
-/* Adjust card styling as needed */
 .card {
   border: 1px solid #ccc;
 }
@@ -107,22 +112,29 @@ video {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive layout adjustments */
+@media (min-width: 992px) {
+  img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  img {
+    width: 260px;
+  }
+}
 
 @media (max-width: 768px) {
 
-  /* Styles for tablets and mobile devices */
   .btnFilter button:nth-child(1),
   .btnFilter button:nth-child(2) {
     width: 40%;
     height: 100px;
   }
-
 }
 
 @media (max-width: 480px) {
 
-  /* Styles for mobile devices */
   .btnFilter button:nth-child(1),
   .btnFilter button:nth-child(2) {
     width: 40%;
