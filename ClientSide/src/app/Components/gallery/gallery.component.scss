@@ -121,6 +121,11 @@ video {
   img {
     width: 250px;
   }
+
+  .last-rows img {
+    width: 350px;
+  }
+  
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
@@ -136,6 +141,7 @@ video {
     width: 40%;
     height: 100px;
   }
+  
 }
 
 @media (max-width: 480px) {
